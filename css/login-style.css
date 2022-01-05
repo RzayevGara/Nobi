@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+.main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nobi-logo{
+    width: 55px;
+}
+
+.nobi{
+    display: flex;
+}
+.nobi>a{
+    display: flex;
+    align-items:center;
+}
+
+.member-log{
+    display: flex;
+}
+
+.member-log>p{
+    font-size:14px;
+    color:#4F4F4F;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.member-log>a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+}
+#sign-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.sign-text{
+    font-size: 24px;
+    font-weight:600;
+}
+
+.sign-button{
+    display: flex;
+    align-items:center;
+    background-color: #2F80ED;
+    height: 50px;
+    border-radius:8px;
+    margin-top: 30px;
+}
+
+.sign-button>a{
+    text-decoration: none;
+    color: white;
+    margin-left:30px;
+}
+
+.google-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.google-logo>img{
+    width: 40px;
+}
+
+.or-text{
+    font-size:16px;
+    color:#828282;
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+    height: 60px;
+    border-radius:8px;
+    border:none;
+    background-color:#F2F2F2;
+    padding-left: 30px;
+}
+input:not(:first-child){
+    margin-top: 20px;
+}
+.psw{
+    position: relative;
+    margin-top: 20px;
+}
+.fa-eye-slash{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.forgot{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color:#2F80ED;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.create-button{
+    background-color: #00BBA4;
+    height: 50px;
+    border-radius:8px;
+    margin-top: 30px;
+    transition: 1s;
+}
+.create-button>a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 13px 0;
+}
+.create-button:hover{
+    background-color:#35D6BD;
+}
+
+@media(min-width:1024px){
+    header{
+        height: 70px;
+        border:none;
+    }
+    
+    .main{
+        width: 80%;
+
+    }
+    .nobi-logo{
+        width: 90px;
+    }
+    .member-log>p{
+        font-size:16px;
+    }
+    
+    .member-log>a{
+        font-size: 16px;
+    }
+    .check>label{
+        width: 80%;
+    }
+}
