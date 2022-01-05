@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+body:before {
+    content:"";
+    display: block;
+    margin-top: 3.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nobi{
+    display: flex;
+}
+
+.nobi-logo{
+    width: 55px;
+}
+
+.navbar>h5{
+    color:white;
+    font-size:16px;
+    margin-bottom: 0;
+}
+
+.navbar>a{
+    text-decoration: none;
+    color:#E0E0E0;
+    font-size: 14px;
+}
+
+section{
+    display: flex;
+    justify-content:center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.upload{
+    height: 230px;
+    border: 2px dashed #BDBDBD;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.upload>h6{
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.image-video{
+    width: 210px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.image{
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+}
+
+.image>h6{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.image>p{
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.title-section{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 45px;
+}
+
+.title-bar{
+    height: 55px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    display:flex;
+    align-items:center;
+}
+
+.title-bar>p{
+    margin-bottom:0;
+    color:#4F4F4F;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.calendar-section>h4{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.calendar{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    border-radius:16px;
+    border: 1px solid #E0E0E0;
+    gap: 10px;
+    margin-top: 15px;
+    height: 340px;
+}
+
+.month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 70px;
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+.month>h4{
+    font-size:16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.chevron-icons{
+    display: flex;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 8px;
+}
+
+.icon:hover{
+    background-color: #F2F2F2;
+}
+
+.date{
+    display: grid;
+    grid-template-columns: repeat(7, 2.5rem);
+    grid-template-rows: repeat(6, 2.5rem);    
+}
+
+.week{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.week>h1{
+    font-size:14px;
+    color: #1AC2B7;
+    font-weight:400;
+    margin-bottom:0;
+}
+
+.numbers{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+.numbers>h1{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom:0;
+}
+.grey-color{
+    color:#BDBDBD;
+}
+
+.numbers:hover{
+    background-color: #35D6BD;
+    cursor: pointer;
+}
+
+.grey-color:hover h1{
+    color: black;
+}
+
+.choose-time{
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.one-hour{
+    font-size: 14px;
+    padding-left: 20px;
+    color:#4F4F4F;
+    font-weight: 400;
+}
+
+.from-to-box{
+    height: 70px;
+    display:flex;
+    border-radius:16px;
+    border: 1px solid #E0E0E0;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.from{
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 10px;
+}
+.to{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-border{
+    border: none;
+}
+.form-text{
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.form-width{
+    width: 60%;
+}
+.form-width:hover{
+    cursor: pointer;
+}
+
+.more-time{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 35px;
+}
+
+.more-time>p{
+    margin-bottom:0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.category{
+    height: 55px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    border:none;
+    color:#4F4F4F;
+    font-size: 14px;
+}
+
+.catg-color{
+    color: #BDBDBD;
+}
+
+.desc{
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    border:none;
+}
+
+.form-floating>label{
+    color: #828282;
+    font-size: 14px;
+}
+
+.publish-button{
+    height: 50px;
+    background-color: #00BBAF;
+    text-align: center;
+    border-radius:8px;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+.publish-button>a{
+    display:block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 0;
+}
+
+.publish-button:hover{
+    background-color: #35D6BD;
+}
+
+
+@media(min-width:1024px){
+    .navbar{
+        width: 80%;
+    }
+    .nobi-logo{
+        width: 70px;
+    }
+    .navbar>h5{
+        font-size:24px;
+    }
+    .main{
+        width: 70%;
+        flex-direction: row;
+        justify-content:center;
+        align-items:flex-start;
+    }
+    .upload{
+        height: 415px;
+    }
+    .upload>h6{
+        font-size:20px;
+    }
+    .image-video{
+        width: 270px;
+    }
+    .image{
+        width: 100px;
+    }
+    .image>img{
+        width: 90px;
+    }
+    .image>h6{
+        font-size: 16px;
+    }
+    .image>p{
+        font-size: 14px;
+    }
+    .date{
+        grid-template-columns: repeat(7, 3rem);
+        grid-template-rows: repeat(6, 2.5rem);    
+    }
+}
